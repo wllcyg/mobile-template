@@ -1,0 +1,24 @@
+body {
+    background: #E8EBF3;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .socials {
+        position: fixed;
+        display: block;
+        left: 20px;
+        bottom: 20px;
+        > a {
+            display: block;
+            width: 30px;
+            opacity: .2;
+            transform: scale(var(--scale, .8));
+            transition: transform .5s cubic-bezier(0.38,-0.12, 0.24, 1.91);
+            &:hover {
+                --scale: 1;
+            }
+        }
+    }
+}
